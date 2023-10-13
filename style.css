@@ -25,12 +25,6 @@ h1 {
   text-align: center;
 }
 
-/* .title {
-  color: white;
-  margin-bottom: 50px;
-  text-align: center;
-} */
-
 .container-main {
   width: 1000px;
   margin: 0 auto;
@@ -49,7 +43,7 @@ ul {
 
 p {
   text-align: center;
-  color: gray;
+  color: #ffffff;
 }
 
 footer {
@@ -65,26 +59,51 @@ button {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 45px;
+  transition: transform 0.3s;
 }
 
 button:hover {
   background-color: white;
   color: #000000;
-  transition: 0.5s;
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  list-style-type: none;
+}
+
+.card-item {
+  width: 20%;
+  transition: transform 0.3s;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: border 0.3s;
 }
 
 .card-item:hover .card-img {
   border: 1px solid white;
-  transition: 0.5s;
+}
+
+.item-profile {
+  text-align: center;
+  margin: 5px 0;
+  color: gray;
+  transition: color 0.3s;
 }
 
 .card-item:hover .item-profile {
   color: white;
-  transition: 0.5s;
-}
-
-.card-item,
-.item-profile {
-  transition: 0.5s;
-  cursor: pointer;
 }
